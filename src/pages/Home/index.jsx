@@ -8,7 +8,7 @@ import { Grid, Typography, Fab } from "@material-ui/core"
 import { getTopProject } from "../../redux/actions/extra"
 import "../../assets/bootstrap.min.css"
 import "./index.css"
-
+import Banner from '../pages/Home/Banner'
 import ShowCard from "../../common/Card"
 
 const Home = props => {
@@ -59,27 +59,7 @@ const Home = props => {
 
   return (
     <div className="Homepage45">
-      <Grid container className="header-container">
-        <div className="header">
-          <h1 className="wel">
-            Welcome to,
-            <br />
-          </h1>
-          <h1 className="govt"> Govt College of Engg. & Ceramic Technology Tech Club</h1>
-          {!props.auth && (
-            <Fab variant="extended" onClick={register}>
-              {" "}
-              REGISTER{" "}
-            </Fab>
-          )}
-          {props.auth && (
-            <Fab variant="extended" onClick={project}>
-              {" "}
-              SUBMIT PROJECT{" "}
-            </Fab>
-          )}
-        </div>
-      </Grid>
+      <Banner/>
       <div className="container-fluid con-2nd ">
         <div className="row r1">
           <Grid item xs={12} md={6} className="body-text">
