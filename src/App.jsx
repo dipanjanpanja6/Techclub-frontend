@@ -74,7 +74,7 @@ function App(props) {
         <Route exact path="/faq" component={() => <FAQ auth={auth} />} />
         <Route exact path="/showcase" component={() => <ShowCase auth={auth} />} />
         <Route exact path="/event" component={() => <Event auth={auth} />} />
-        <Route exact path="/" component={() => <NewHome auth={auth} />} />
+        <Route exact path="/" component={() => <Home auth={auth} />} />
         <Route exact path="/privacy" component={Contact} />
         <Route exact path="/project/:id" component={() => <ProjectDetailsPage auth={auth} />} />
         <Route exact path="/user/:uid" component={User} />
