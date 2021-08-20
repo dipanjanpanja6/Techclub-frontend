@@ -1,24 +1,20 @@
 import React, { useEffect } from "react"
-import { Paper, Typography, Grid, Divider, Chip } from "@material-ui/core"
-// import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import { Typography, Grid, Divider, Chip } from "@material-ui/core"
 import CircularProgress from "@material-ui/core/CircularProgress"
-
 import { makeStyles } from "@material-ui/core/styles"
 import ExpansionPanel from "@material-ui/core/ExpansionPanel"
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails"
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import { connect } from "react-redux"
-import { getFaq } from "../../redux/actions/extra"
 import PropType from "prop-types"
 import { toast } from "react-toastify"
 
+import { getFaq } from "../../redux/actions/extra"
+
 const style = makeStyles(theme => ({
-  paper: {
-    padding: "20px",
-  },
-  pape: {
-    padding: "20px",
+  container: {
+    padding: "40px",
   },
   intro: {
     height: "50vh",
@@ -26,7 +22,6 @@ const style = makeStyles(theme => ({
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    //    background: 'url(https://source.unsplash.com/random/?tech)',
     color: "white",
     backgroundImage: `url(${require("../../assets/FAQ.webp")})`,
   },
@@ -43,6 +38,7 @@ const style = makeStyles(theme => ({
     color: theme.palette.text.secondary,
   },
 }))
+
 const FAQ = props => {
   const sty = style()
   const [expanded, setExpanded] = React.useState(false)
@@ -93,10 +89,8 @@ const FAQ = props => {
           Frequently Asked Questions (FAQs)
         </Typography>
       </Grid>
-      <Grid container justify="center" item xs={12} className={sty.pape}>
-        <Paper elevation={10} className={sty.paper}>
-          <div className={sty.root}>{listFaq}</div>
-        </Paper>
+      <Grid container justify="center" item xs={12} className={sty.container}>
+        <div className={sty.root}>{listFaq}</div>
       </Grid>
     </>
   )
