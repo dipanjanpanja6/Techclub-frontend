@@ -25,7 +25,7 @@ import ProjectDetailsPage from "./pages/ProjectDetails"
 import "./assets/bootstrap.min.css"
 import Navbar from "./common/Navbar"
 import FooterNew from "./common/NewFooter"
-import NewHome from "./pages/Home/Home"
+import Home from "./pages/Home/index"
 //=====old====
 // import Home from "./pages/Home"
 // import AppBAr from "./common/Appbar"

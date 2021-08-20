@@ -8,7 +8,7 @@ import { Grid, Typography, Fab } from "@material-ui/core"
 import { getTopProject } from "../../redux/actions/extra"
 import "../../assets/bootstrap.min.css"
 import "./index.css"
-import Banner from '../pages/Home/Banner'
+import Banner from '../Home/Banner'
 import ShowCard from "../../common/Card"
 
 const Home = props => {
