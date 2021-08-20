@@ -4,6 +4,24 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### Setting up development environment
+
+1. create env template
+
+```
+yarn setup
+```
+
+2. fill env in .env file
+
+### Before commit
+
+1. Run following command to format code
+
+```
+yarn format
+```
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />
