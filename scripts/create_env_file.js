@@ -1,0 +1,13 @@
+const fs = require("fs")
+const path = require("path")
+
+const envFile = `REACT_APP_FIREBASE_API_KEY=
+REACT_APP_FIREBASE_MEASUREMENTID=
+REACT_APP_FIREBASE_AUTHDOMAIN=
+REACT_APP_FIREBASE_API_ID=
+REACT_APP_FIREBASE_DATABASE=
+REACT_APP_PRODUCTION_ENDPOINT=
+REACT_APP_DEVELOPMENT_ENDPOINT=http://localhost:7000
+GENERATE_SOURCEMAP=false`
+
+fs.writeFileSync(path.join(process.cwd(), ".env"), envFile)

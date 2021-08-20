@@ -1,0 +1,52 @@
+{
+  "homepage": "https://techclub.web.app",
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.54",
+    "antd": "^4.2.5",
+    "dateformat": "^3.0.3",
+    "firebase": "^7.14.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-toastify": "^6.0.5",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "socket.io-client": "^2.3.0",
+    "unique-names-generator": "^4.2.0"
+  },
+  "devDependencies": {
+    "joi": "^17.4.2",
+    "prettier": "^2.3.2",
+    "redux-devtools-extension": "^2.13.9"
+  },
+  "scripts": {
+    "prestart": "node scripts/env_validate.js",
+    "start": "react-scripts start",
+    "build": "node scripts/env_validate.js && react-scripts build",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "setup": "node scripts/create_env_file.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
