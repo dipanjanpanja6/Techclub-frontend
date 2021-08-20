@@ -1,17 +1,17 @@
-import { createStore, combineReducers, applyMiddleware,  } from 'redux';
+import { createStore, combineReducers, applyMiddleware } from "redux"
 
-import { composeWithDevTools } from 'redux-devtools-extension';
-import thunk from 'redux-thunk'
-import admin from './reduser/admin'
+import { composeWithDevTools } from "redux-devtools-extension"
+import thunk from "redux-thunk"
+import admin from "./reduser/admin"
 
-const initialState = {};
+const initialState = {}
 
-const middleware = [thunk];
+const middleware = [thunk]
 
 const reducers = combineReducers({
-    admin:admin
+  admin: admin,
 })
 
-const store = createStore(reducers, initialState, composeWithDevTools(applyMiddleware(...middleware)));
+const store = createStore(reducers, initialState, composeWithDevTools(applyMiddleware(...middleware)))
 
-export default store;
+export default store
