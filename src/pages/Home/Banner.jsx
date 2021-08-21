@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import ButtonX from '../../common/ButtonX';
 import './style.css';
 
 export default class Banner extends Component {
-    render() {
+    render(props) {
         return (
             <div className="wrapper">
             <div className="bg-image">
@@ -13,7 +13,10 @@ export default class Banner extends Component {
                             <div className="col-md-6 col-12">
                                 <span id="home-sub-title">Welcome to</span>
                                 <span id="home-title">GCECT Tech Club</span>
-                                <Link to="/auth" style={{border: "2px solid #fff"}} className="btn btn-outline-light btn-lg mt-4 px-4 rounded-pill">Register</Link>
+                                <div className="mt-4">
+                                    { !this.props.auth && <ButtonX value="Register" to="/auth" size="l" color2="#6ca6c1"/> }
+                                    { this.props.auth && <ButtonX value="Submit Project" to="/home" size="l" color2="#6ca6c1"/> }
+                                </div>
                             </div>
                         </div>
                     </div>

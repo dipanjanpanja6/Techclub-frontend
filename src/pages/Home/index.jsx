@@ -10,6 +10,7 @@ import "../../assets/bootstrap.min.css"
 import "./index.css"
 import Banner from '../Home/Banner'
 import ShowCard from "../../common/Card"
+import ClubSection from "./Club/ClubSection"
 
 const Home = props => {
   // console.log(props);
@@ -59,35 +60,9 @@ const Home = props => {
 
   return (
     <div className="Homepage45">
-      <Banner/>
-      <div className="container-fluid con-2nd ">
-        <div className="row r1">
-          <Grid item xs={12} md={6} className="body-text">
-            <h1>
-              we aim to educate the GCECT community on the latest technology trends and skills, to facilitate recruiting opportunities and to foster social and professional networking within
-              GCECT and beyond
-            </h1>
-          </Grid>
-          <Grid item xs={12} md={6} className="body-text img-container">
-            <h1>tech tronix</h1>
-            <h2>.Arduino .Networking .IoT</h2>
-          </Grid>
-        </div>
-        <div className="row r2">
-          <Grid item xs={12} md={6} className=" text-area-1">
-            <h1>code monk</h1>
-            <h2>Learn. Inspire. Grow.</h2>
-          </Grid>
-          <Grid item xs={12} md={6} className=" text-area-2 ">
-            <p>
-              Learn with community. Sessions are taken on regular basis by Alumni Team and Mentors. We value the power of influence. We believe people here will be the foundation of great
-              coders. We learn together and help each other so that all people of community grow with each other. Sessions are taken either Offline locations nearby your colleges or in
-              colleges on invitation or online as Youtube Webinar.
-            </p>
-            <code>Session topics : hacking, data structure, algorithms, machine learning, Java, Node Js and other related development topics.</code>
-          </Grid>
-        </div>
-      </div>
+     <Banner auth={props.auth} />
+      <ClubSection />
+     
       <Grid container justify="space-around" style={{ padding: "50px 12px" }}>
         <Grid item sm={12}>
           <Typography style={{ padding: "0 20px" }} variant="h5">
