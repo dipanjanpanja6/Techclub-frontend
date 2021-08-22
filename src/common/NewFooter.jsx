@@ -47,7 +47,7 @@ function Footer() {
               GCECT Tech Club
             </Link>
           </div>
-          <small className='website-rights'>GCECT Tech Club © 2020</small>
+          <small className='website-rights'>GCECT Tech Club © 2021</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'
