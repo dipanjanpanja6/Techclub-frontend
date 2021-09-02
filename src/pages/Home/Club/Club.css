@@ -1,0 +1,67 @@
+.wrapper-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-inner {
+    flex: 0 0 50%;
+}
+
+.wrapper-content {
+    text-align: center;
+    color: #f7fff7;
+}
+
+.club-image {
+    background-position: center;
+    ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.club-title {
+    color: #f7fff7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.club-name {
+    font-size: 7vw;
+    font-weight: bold;
+    font-family: "Orbitron";
+    text-transform: capitalize;
+}
+
+.club-motto {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 962px) {
+    .wrapper-section {
+        display: flex;
+        flex-direction: column !important;
+        align-items: stretch;
+        justify-content: center;
+    }
+    .wrapper-inner {
+        flex: 0 0 100%;
+    }
+    .wrapper-content {
+        font-size: 14px;
+        padding: 50px 25px;
+    }
+    .club-motto {
+        text-align: center;
+        font-size: smaller;
+    }
+    .club-name {
+        font-size: 32px;
+    }
+}

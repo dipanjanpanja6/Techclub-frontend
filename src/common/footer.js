@@ -35,7 +35,7 @@ const sty = makeStyles(theme => ({
 }))
 
 const Footer = () => {
-  const style = sty()
+  const style = sty() 
   return (
     <Paper elevation={10} className={style.footer}>
       <Grid container style={{ marginBottom: 20 }}>
@@ -92,7 +92,7 @@ const Footer = () => {
         </Grid>
       </Grid>
       <Divider />
-      <Copyright />
+      <Copyright /> 
     </Paper>
   )
 }
