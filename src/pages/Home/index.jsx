@@ -6,9 +6,8 @@ import CircularProgress from "@material-ui/core/CircularProgress"
 import { Grid, Typography, Fab } from "@material-ui/core"
 
 import { getTopProject } from "../../redux/actions/extra"
-import "../../assets/bootstrap.min.css"
 import "./index.css"
-import Banner from '../Home/Banner'
+import Banner from "../Home/Banner"
 import ShowCard from "../../common/Card"
 import ClubSection from "./Club/ClubSection"
 
@@ -27,10 +26,6 @@ const Home = props => {
 
   useEffect(() => {
     document.title = `Tech Club - GCECT`
-    const script = document.createElement("script")
-    script.src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    script.async = true
-    document.body.appendChild(script)
     props.getTopProject()
   }, [])
   useEffect(() => {
@@ -60,9 +55,9 @@ const Home = props => {
 
   return (
     <div className="Homepage45">
-     <Banner auth={props.auth} />
+      <Banner auth={props.auth} />
       <ClubSection />
-     
+
       <Grid container justify="space-around" style={{ padding: "50px 12px" }}>
         <Grid item sm={12}>
           <Typography style={{ padding: "0 20px" }} variant="h5">
