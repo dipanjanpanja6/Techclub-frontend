@@ -1,8 +1,7 @@
 import React from "react"
 import "./Footer.css"
 import { Link } from "react-router-dom"
-import { Instagram, YouTube, Twitter, LinkedIn } from "@material-ui/icons"
-import { MdFingerprint } from "react-icons/md"
+import { Instagram, YouTube, Twitter, LinkedIn, Fingerprint } from "@material-ui/icons"
 import Facebook from "@material-ui/icons/Facebook"
 
 function Footer() {
@@ -50,7 +49,7 @@ function Footer() {
         <div className="social-media-wrap">
           <div className="footer-logo">
             <Link to="/" className="social-logo">
-              <MdFingerprint className="navbar-icon" />
+              <Fingerprint className="navbar-icon" />
               GCECT Tech Club
             </Link>
           </div>
