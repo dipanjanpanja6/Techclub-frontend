@@ -90,10 +90,10 @@ const Home = props => {
         </div>
       </div>
       <div className="container-fluid social-icon">
-        <a rel="external nofollow noopener noreferrer" target="_blank" href="https://chat.whatsapp.com/G1D5NS3IIb41HUE4nIcdPP">
+        <a rel="external nofollow noopener noreferrer" target="_blank" href="https://chat.whatsapp.com/JQGJIGtzWVG69btJaSnXUB">
           <img src={require(`../../assets/icon/185958-social-media-icons/svg/whatsapp.svg`)} />
         </a>
-        <a rel="external nofollow noopener noreferrer" target="_blank" href="https://t.me/GCECTtechclub">
+        <a rel="external nofollow noopener noreferrer" target="_blank" href="https://t.me/joinchat/ZBjxYz5oCulkMzA1">
           <img src={require("../../assets/icon/185958-social-media-icons/svg/telegram.svg")} />
         </a>
         <a rel="external nofollow noopener noreferrer" target="_blank" href="https://www.linkedin.com/company/gcect-techclub">

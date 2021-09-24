@@ -397,7 +397,7 @@ class Auth extends Component {
                 )}
 
                 <Typography variant="body2" color="textSecondary" style={{ padding: "12px" }}>
-                  Or continued with
+                  Or continue with
                 </Typography>
 
                 <Fab onClick={this.facebook} size="medium" className={clsx(classes.buttonFab)} variant="round" color="primary">
