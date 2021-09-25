@@ -105,7 +105,8 @@ const Home = props => {
               history.push("/showcase")
             }}
             color="primary"
-            variant="extended">
+            variant="extended"
+          >
             More
           </Fab>
         </Grid>

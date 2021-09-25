@@ -4,33 +4,45 @@ import CardContent from "@material-ui/core/CardContent"
 import CardMedia from "@material-ui/core/CardMedia"
 import Typography from "@material-ui/core/Typography"
 import { Button, CardActionArea, CardActions } from "@material-ui/core"
+import { Link } from "react-router"
 import "./cards.css"
 //individual card components
-export default function MultiActionAreaCard({ memberData }) {
+export default function MultiActionAreaCard(props) {
   var cardStyle = {
     display: "block",
-    width: "15vw",
+    width: "22vw",
     transitionDuration: "0.3s",
-    height: "20vw",
+    height: "25vw",
     margin: "0 1%",
   }
+
+  var iconStyle = {
+    marginLeft: "62%",
+  }
+
+  const linkedin = props.link
+
   return (
     <Card style={cardStyle} className="member-card">
       <CardActionArea>
-        <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana" />
+        <CardMedia component="img" height="220" image={require(`${props.imgSource}`)} alt="green iguana" />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            {props.name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica
+            {props.description}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          email
         </Button>
+        <a href={linkedin} style={iconStyle}>
+          <img src={require("../../assets/icon/185958-social-media-icons/svg/linkedin.svg")} />
+          LinkedIn
+        </a>
       </CardActions>
     </Card>
   )
