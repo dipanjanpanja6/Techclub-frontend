@@ -8,8 +8,9 @@ import { Grid, Typography, Fab } from "@material-ui/core"
 import { getTopProject } from "../../redux/actions/extra"
 import "../../assets/bootstrap.min.css"
 import "./index.css"
-import Banner from '../Home/Banner'
+import Banner from "../Home/Banner"
 import ShowCard from "../../common/Card"
+import Team from "./Team"
 
 const Home = props => {
   // console.log(props);
@@ -59,7 +60,7 @@ const Home = props => {
 
   return (
     <div className="Homepage45">
-      <Banner/>
+      <Banner />
       <div className="container-fluid con-2nd ">
         <div className="row r1">
           <Grid item xs={12} md={6} className="body-text">
@@ -88,6 +89,7 @@ const Home = props => {
           </Grid>
         </div>
       </div>
+      <Team />
       <Grid container justify="space-around" style={{ padding: "50px 12px" }}>
         <Grid item sm={12}>
           <Typography style={{ padding: "0 20px" }} variant="h5">
