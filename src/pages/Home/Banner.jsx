@@ -1,9 +1,11 @@
+
+import { Button } from "@material-ui/core"
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
 import "./style.css"
 
 export default class Banner extends Component {
-  render() {
+  render(props) {
     return (
       <div className="wrapper">
         <div className="bg-image">
@@ -13,9 +15,17 @@ export default class Banner extends Component {
                 <div className="col-md-6 col-12">
                   <span id="home-sub-title">Welcome to</span>
                   <span id="home-title">GCECT Tech Club</span>
-                  <Link to="/auth" style={{ border: "2px solid #fff" }} className="btn btn-outline-light btn-lg mt-4 px-4 rounded-pill">
-                    Register
-                  </Link>
+                  <div className="mt-4">
+                    {this.props.auth ? (
+                      <Button component={Link} to="/home" variant="outlined" color="primary">
+                        Submit Project
+                      </Button>
+                    ) : (
+                      <Button component={Link} to="/auth" variant="outlined" color="primary">
+                        Register
+                      </Button>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>

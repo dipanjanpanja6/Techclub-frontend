@@ -329,7 +329,7 @@ const Index = () => {
           <h1>Contact Us</h1>
           <p>If you have any questions about this Privacy Policy, You can contact us:</p>
           <ul>
-            <li>By email: dipanjanpanja6@gmail.com</li>
+            <li>By email: gcect.technologyclub@gmail.com</li>
           </ul>
         </Paper>
       </Grid>

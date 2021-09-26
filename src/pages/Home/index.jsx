@@ -6,11 +6,14 @@ import CircularProgress from "@material-ui/core/CircularProgress"
 import { Grid, Typography, Fab } from "@material-ui/core"
 
 import { getTopProject } from "../../redux/actions/extra"
-import "../../assets/bootstrap.min.css"
 import "./index.css"
 import Banner from "../Home/Banner"
 import ShowCard from "../../common/Card"
+
 import Team from "./Team"
+
+import ClubSection from "./Club/ClubSection"
+
 
 const Home = props => {
   // console.log(props);
@@ -27,10 +30,6 @@ const Home = props => {
 
   useEffect(() => {
     document.title = `Tech Club - GCECT`
-    const script = document.createElement("script")
-    script.src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    script.async = true
-    document.body.appendChild(script)
     props.getTopProject()
   }, [])
   useEffect(() => {
@@ -60,36 +59,10 @@ const Home = props => {
 
   return (
     <div className="Homepage45">
-      <Banner />
-      <div className="container-fluid con-2nd ">
-        <div className="row r1">
-          <Grid item xs={12} md={6} className="body-text">
-            <h1>
-              we aim to educate the GCECT community on the latest technology trends and skills, to facilitate recruiting opportunities and to foster social and professional networking within
-              GCECT and beyond
-            </h1>
-          </Grid>
-          <Grid item xs={12} md={6} className="body-text img-container">
-            <h1>tech tronix</h1>
-            <h2>.Arduino .Networking .IoT</h2>
-          </Grid>
-        </div>
-        <div className="row r2">
-          <Grid item xs={12} md={6} className=" text-area-1">
-            <h1>code monk</h1>
-            <h2>Learn. Inspire. Grow.</h2>
-          </Grid>
-          <Grid item xs={12} md={6} className=" text-area-2 ">
-            <p>
-              Learn with community. Sessions are taken on regular basis by Alumni Team and Mentors. We value the power of influence. We believe people here will be the foundation of great
-              coders. We learn together and help each other so that all people of community grow with each other. Sessions are taken either Offline locations nearby your colleges or in
-              colleges on invitation or online as Youtube Webinar.
-            </p>
-            <code>Session topics : hacking, data structure, algorithms, machine learning, Java, Node Js and other related development topics.</code>
-          </Grid>
-        </div>
-      </div>
-      <Team />
+
+      <Banner auth={props.auth} />
+      <ClubSection />
+
       <Grid container justify="space-around" style={{ padding: "50px 12px" }}>
         <Grid item sm={12}>
           <Typography style={{ padding: "0 20px" }} variant="h5">
@@ -105,8 +78,7 @@ const Home = props => {
               history.push("/showcase")
             }}
             color="primary"
-            variant="extended"
-          >
+            variant="extended">
             More
           </Fab>
         </Grid>
@@ -123,10 +95,10 @@ const Home = props => {
         </div>
       </div>
       <div className="container-fluid social-icon">
-        <a rel="external nofollow noopener noreferrer" target="_blank" href="https://chat.whatsapp.com/G1D5NS3IIb41HUE4nIcdPP">
+        <a rel="external nofollow noopener noreferrer" target="_blank" href="https://chat.whatsapp.com/JQGJIGtzWVG69btJaSnXUB">
           <img src={require(`../../assets/icon/185958-social-media-icons/svg/whatsapp.svg`)} />
         </a>
-        <a rel="external nofollow noopener noreferrer" target="_blank" href="https://t.me/GCECTtechclub">
+        <a rel="external nofollow noopener noreferrer" target="_blank" href="https://t.me/joinchat/ZBjxYz5oCulkMzA1">
           <img src={require("../../assets/icon/185958-social-media-icons/svg/telegram.svg")} />
         </a>
         <a rel="external nofollow noopener noreferrer" target="_blank" href="https://www.linkedin.com/company/gcect-techclub">

@@ -21,14 +21,12 @@ import ProgressBar from "./common/ProgressBar"
 import ProjectDetailsPage from "./pages/ProjectDetails"
 
 //===New=====
-// import "bootstrap/dist/css/bootstrap.min.css"
-import "./assets/bootstrap.min.css"
-import Navbar from "./common/Navbar"
+// import Navbar from "./common/Navbar"
 import FooterNew from "./common/NewFooter"
 import Home from "./pages/Home/index"
 //=====old====
 // import Home from "./pages/Home"
-// import AppBAr from "./common/Appbar"
+import AppBar from "./common/Appbar"
 // import Footer from "./common/footer"
 //============
 function App(props) {
@@ -68,7 +66,7 @@ function App(props) {
 
   const AppContainer = () => (
     <div>
-      <Navbar auth={auth} out={out} />
+      <AppBar auth={auth} out={out} />
       <Switch>
         <Route exact path="/required" component={() => <FAQ auth={auth} />} />
         <Route exact path="/faq" component={() => <FAQ auth={auth} />} />
