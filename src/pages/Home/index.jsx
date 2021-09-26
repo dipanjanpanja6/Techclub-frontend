@@ -9,11 +9,7 @@ import { getTopProject } from "../../redux/actions/extra"
 import "./index.css"
 import Banner from "../Home/Banner"
 import ShowCard from "../../common/Card"
-
-import Team from "./Team"
-
 import ClubSection from "./Club/ClubSection"
-
 
 const Home = props => {
   // console.log(props);
@@ -59,7 +55,6 @@ const Home = props => {
 
   return (
     <div className="Homepage45">
-
       <Banner auth={props.auth} />
       <ClubSection />
 
