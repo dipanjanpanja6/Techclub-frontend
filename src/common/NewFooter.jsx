@@ -1,8 +1,9 @@
 import React from "react"
 import "./Footer.css"
 import { Link } from "react-router-dom"
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin } from "react-icons/fa"
-import { MdFingerprint } from "react-icons/md"
+=======
+import { Instagram, YouTube, Twitter, LinkedIn, Fingerprint } from "@material-ui/icons"
+import Facebook from "@material-ui/icons/Facebook"
 
 function Footer() {
   return (
@@ -40,6 +41,7 @@ function Footer() {
             <h4>Social Media</h4>
             <Link to="/">Instagram</Link>
             <Link to="/">Facebook</Link>
+
             <Link to="/">Youtube</Link>
             <Link to="/">Twitter</Link>
           </div>
@@ -49,26 +51,28 @@ function Footer() {
         <div className="social-media-wrap">
           <div className="footer-logo">
             <Link to="/" className="social-logo">
-              <MdFingerprint className="navbar-icon" />
+
+              <Fingerprint className="navbar-icon" />
               GCECT Tech Club
             </Link>
           </div>
-          <small className="website-rights">GCECT Tech Club © 2020</small>
+          <small className="website-rights">GCECT Tech Club © 2021</small>
           <div className="social-icons">
-            <Link className="social-icon-link" to="/" target="_blank" aria-label="Facebook">
-              <FaFacebook />
+            <Link to="/" target="_blank" aria-label="Facebook">
+              <Facebook />
             </Link>
-            <Link className="social-icon-link" to="//www.instagram.com/" target="_blank" aria-label="Instagram">
-              <FaInstagram />
+            <Link to="//www.instagram.com/" target="_blank" aria-label="Instagram">
+              <Instagram />
             </Link>
-            <Link className="social-icon-link" to={"//www.youtube.com/channel/"} target="_blank" aria-label="Youtube">
-              <FaYoutube />
+            <Link to={"//www.youtube.com/channel/"} target="_blank" aria-label="YouTube">
+              <YouTube />
             </Link>
-            <Link className="social-icon-link" to="/" target="_blank" aria-label="Twitter">
-              <FaTwitter />
+            <Link to="/" target="_blank" aria-label="Twitter">
+              <Twitter />
             </Link>
-            <Link className="social-icon-link" to="//www.linkedin.com/in/" target="_blank" aria-label="LinkedIn">
-              <FaLinkedin />
+            <Link to="//www.linkedin.com/in/" target="_blank" aria-label="LinkedIn">
+              <LinkedIn />
+
             </Link>
           </div>
         </div>

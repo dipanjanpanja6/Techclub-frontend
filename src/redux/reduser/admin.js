@@ -97,6 +97,7 @@ export default function (state = initialState, actions) {
       return {
         ...state,
         login: actions.payload,
+        auth: actions.payload.success && actions.payload.isActivated,
       }
     case ACTIVATE:
       return {

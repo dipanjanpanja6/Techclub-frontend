@@ -1,7 +1,5 @@
 import firebase from "firebase"
 
-// export const url='https://techclubserver.herokuapp.com'
-// export const url='https://techclub-official.herokuapp.com'
 export const url = process.env.NODE_ENV === "production" ? process.env.REACT_APP_PRODUCTION_ENDPOINT : process.env.REACT_APP_DEVELOPMENT_ENDPOINT
 
 const firebaseConfig = {
