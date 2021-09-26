@@ -4,7 +4,7 @@ import { connect } from "react-redux"
 import PropTypes from "prop-types"
 import CircularProgress from "@material-ui/core/CircularProgress"
 import { Grid, Typography, Fab } from "@material-ui/core"
-
+import Team from "./Team"
 import { getTopProject } from "../../redux/actions/extra"
 import "./index.css"
 import Banner from "../Home/Banner"
