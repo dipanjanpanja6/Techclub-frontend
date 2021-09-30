@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Ayush Jha",
+    "designation": "President, MLSA, Cyber-Security Lead",
+    "img": "./team-members/ayushjha.jpeg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/in/00-ayush-jha/"
+    }
+  },
+  {
+    "name": "Jayeeta Sarkar",
+    "designation": "Event Manager",
+    "img": "./team-members/jayetasarkar.jpg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/"
+    }
+  },
+  {
+    "name": "Akash Kumar Sen",
+    "designation": "Web Development Lead",
+    "img": "./team-members/akashkumarsen.jpg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/in/akash-kumar-sen-220b651b0/"
+    }
+  },
+  {
+    "name": "Sitam Sardar",
+    "designation": "Android App Development Lead",
+    "img": "./team-members/sitamsardar.jpeg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/in/sitam-sardar-10219b1b3/"
+    }
+  },
+  {
+    "name": "Souhardya Ganguly",
+    "designation": "ML/AI Lead",
+    "img": "./team-members/souhardyaganguly.jpeg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/in/souhardya-ganguly-a2a5ba1a9/"
+    }
+  },
+  {
+    "name": "Debdoot Roy Chowdhury",
+    "designation": "CP Lead, CodeChef GCECT Chapter Lead",
+    "img": "./team-members/debdootroychowdhury.jpeg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/in/debdootrc/"
+    }
+  },
+  {
+    "name": "Shubhrima Jana",
+    "designation": "GDSC Lead",
+    "img": "./team-members/subhrimajana.jpeg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/in/shubhrima-jana/"
+    }
+  },
+  {
+    "name": "Aniruddha Sarkar",
+    "designation": "Design Lead",
+    "img": "./team-members/aniruddha.jpg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/in/aniruddha-sarkar-3733791b7/"
+    }
+  }
+]
