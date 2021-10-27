@@ -83,7 +83,7 @@ function HAppBar(props) {
           <Toolbar>
             <Grid className={classes.title}>
               <Link to="/" underline="none" component={RouterLink} variant="h6" className={classes.title}>
-                GCECT Tech club
+                BYTEMONK
               </Link>
             </Grid>
             <Box flex={1} />

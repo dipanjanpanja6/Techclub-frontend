@@ -50,7 +50,7 @@ function Footer() {
           <div className="footer-logo">
             <Link to="/" className="social-logo">
               <Fingerprint className="navbar-icon" />
-              GCECT Tech Club
+              ByteMonk-GCECT Tech Club
             </Link>
           </div>
           <small className="website-rights">GCECT Tech Club © 2021</small>

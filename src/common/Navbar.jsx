@@ -49,7 +49,7 @@ function Navbar(props) {
       <nav className={navbar ? 'navbar active': 'navbar'}>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <h3> GCECT Tech Club</h3>
+            <h3> ByteMonk </h3>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             {click ? <FaTimes color={pColor}/> : <FaBars color={pColor}/> }
