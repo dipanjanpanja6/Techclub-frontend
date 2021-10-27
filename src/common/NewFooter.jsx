@@ -1,6 +1,7 @@
 import React from "react"
 import "./Footer.css"
-import { Link } from "react-router-dom"
+import { Link as RouterLink } from "react-router-dom"
+import { Link } from "@material-ui/core";
 import { Instagram, YouTube, Twitter, LinkedIn, Fingerprint } from "@material-ui/icons"
 import Facebook from "@material-ui/icons/Facebook"
 
@@ -23,51 +24,55 @@ function Footer() {
           </div>
           <div className="footer-link-items">
             <h4>Events</h4>
-            <Link to="/event/coding">Coding challenge</Link>
-            <Link to="/required">Require Class B member</Link>
-            <Link to="/showcase">Showcase</Link>
+            <Link component={RouterLink} to="/event/coding">Coding challenge</Link>
+            <Link to="/required" component={RouterLink} >Require Class B member</Link>
+            <Link to="/showcase" component={RouterLink} >Showcase</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
             <h4>Get Helped</h4>
-            <Link to="/privacy">Accessibility</Link>
-            <Link to="/privacy">Privacy Policy</Link>
-            <Link to="/feedback">Get Helped with this Website</Link>
-            <Link to="/feedback">Send Website Corrections</Link>
+            <Link component={RouterLink} to="/privacy">Accessibility</Link>
+            <Link component={RouterLink} to="/privacy">Privacy Policy</Link>
+            <Link component={RouterLink} to="/feedback">Get Helped with this Website</Link>
+            <Link component={RouterLink} to="/feedback">Send Website Corrections</Link>
           </div>
           <div className="footer-link-items">
             <h4>Social Media</h4>
-            <Link to="/">Instagram</Link>
-            <Link to="/">Facebook</Link>
-            <Link to="/">YouTube</Link>
-            <Link to="/">Twitter</Link>
+            <Link href="#">Instagram</Link>
+            <Link href="#">Facebook</Link>
+            <Link href="#">YouTube</Link>
+            <Link href="#">Twitter</Link>
           </div>
         </div>
       </div>
       <section className="social-media">
         <div className="social-media-wrap">
           <div className="footer-logo">
-            <Link to="/" className="social-logo">
+            <Link color="inherit" component={RouterLink} to="/" className="social-logo">
               <Fingerprint className="navbar-icon" />
-              ByteMonk-GCECT Tech Club
+              ByteMonk-GTC
             </Link>
           </div>
-          <small className="website-rights">GCECT Tech Club © 2021</small>
+          <small className="website-rights">
+            Made with ❤️ by {" "}
+            <Link color="inherit" href="https://www.linkedin.com/in/dipanjanpanja6/" target="_blank">Dipanjan Panja (CSE-21) </Link>
+             & <Link color="inherit" target="_blank" href="https://www.linkedin.com/in/00-ayush-jha/">Ayush Jha (CSE-23)</Link>
+          </small>
           <div className="social-icons">
-            <Link to="/" target="_blank" aria-label="Facebook">
+            <Link color="inherit" href="#" target="_blank" aria-label="Facebook">
               <Facebook />
             </Link>
-            <Link to="//www.instagram.com/" target="_blank" aria-label="Instagram">
+            <Link color="inherit" href="//www.instagram.com/" target="_blank" aria-label="Instagram">
               <Instagram />
             </Link>
-            <Link to={"//www.youtube.com/channel/"} target="_blank" aria-label="YouTube">
+            <Link color="inherit" href={"//www.youtube.com/channel/"} target="_blank" aria-label="YouTube">
               <YouTube />
             </Link>
-            <Link to="/" target="_blank" aria-label="Twitter">
+            <Link color="inherit" href="/" target="_blank" aria-label="Twitter">
               <Twitter />
             </Link>
-            <Link to="//www.linkedin.com/in/" target="_blank" aria-label="LinkedIn">
+            <Link color="inherit" href="//www.linkedin.com/in/" target="_blank" aria-label="LinkedIn">
               <LinkedIn />
             </Link>
           </div>
