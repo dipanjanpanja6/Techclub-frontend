@@ -11,7 +11,7 @@ export default function Team() {
 
   return (
     <div>
-      <Typography style={{ padding: "10px 20px", textAlign: "center", marginTop: "5%" }} variant="h3">
+      <Typography style={{ fontFamily: "Righteous", padding: "10px 20px", textAlign: "center", marginTop: "5%" }} variant="h3">
         Meet the Team
       </Typography>
       <div style={{ margin: "3% 1.5% ", display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>

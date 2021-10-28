@@ -47,13 +47,8 @@ function Footer() {
       </div>
       <section className="social-media">
         <div className="social-media-wrap">
-          <div className="footer-logo">
-            <Link to="/" className="social-logo">
-              <Fingerprint className="navbar-icon" />
-              ByteMonk-GCECT Tech Club
-            </Link>
-          </div>
-          <small className="website-rights">GCECT Tech Club © 2021</small>
+          <div className="footer-logo"></div>
+          <small className="website-rights">Bytemonk-GCECT Tech Club © 2021</small>
           <div className="social-icons">
             <Link to="/" target="_blank" aria-label="Facebook">
               <Facebook />
