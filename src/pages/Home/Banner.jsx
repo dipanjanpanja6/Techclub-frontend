@@ -13,14 +13,15 @@ export default class Banner extends Component {
               <div className="row">
                 <div className="col-md-6 col-12">
                   <span id="home-sub-title">Welcome to</span>
-                  <span id="home-title">GCECT Tech Club</span>
+                  <span id="home-title">Bytemonk</span>
+                  <span id="home-sub-title">The Official Technical Club of GCECT</span>
                   <div className="mt-4">
                     {this.props.auth ? (
                       <Button component={Link} to="/home" variant="outlined" color="primary">
                         Submit Project
                       </Button>
                     ) : (
-                      <Button component={Link} to="/auth" variant="outlined" color="primary">
+                      <Button component={Link} to="/auth" variant="outlined" color="secondary">
                         Register
                       </Button>
                     )}

@@ -12,7 +12,7 @@ export default function MultiActionAreaCard(props) {
     display: "flex",
     justifyContent: "space-between",
     flexDirection: "column",
-    width: "22vw",
+    width: "18vw",
     transitionDuration: "0.3s",
     borderRadius: "30px",
     height: "fit-content",
@@ -31,7 +31,7 @@ export default function MultiActionAreaCard(props) {
   return (
     <Card style={cardStyle} className="member-card">
       <CardActionArea>
-        <CardMedia component="img" height="220" image={require(`${props.imgSource}`)} alt="green iguana" style={{ objectFit: "contain" }} />
+        <CardMedia component="img" height="220" image={require(`${props.imgSource}`)} alt={props.name} style={{ objectFit: "contain", borderRadius: "0" }} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {props.name}
