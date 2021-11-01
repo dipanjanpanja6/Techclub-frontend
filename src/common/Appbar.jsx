@@ -1,8 +1,7 @@
 import React, { useEffect } from "react"
 import PropTypes from "prop-types"
-import { AppBar, Toolbar, useScrollTrigger, Link, Grid, Fab, Menu, MenuItem, IconButton, Box, ListItemIcon } from "@material-ui/core"
+import { AppBar, Toolbar, useScrollTrigger, Button, Link, Grid, Fab, Menu, MenuItem, IconButton, Box, ListItemIcon } from "@material-ui/core"
 import CssBaseline from "@material-ui/core/CssBaseline"
-import { Button } from "./Button"
 // import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import { makeStyles } from "@material-ui/core/styles"
 import { Link as RouterLink } from "react-router-dom"
@@ -10,7 +9,6 @@ import { useHistory, NavLink } from "react-router-dom"
 import MenuIcon from "@material-ui/icons/Menu"
 import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew"
 import PersonPinIcon from "@material-ui/icons/PersonPin"
-import logo from "../assets/logo.png"
 
 function HideOnScroll(props) {
   const { children } = props
@@ -85,25 +83,25 @@ function HAppBar(props) {
           <Toolbar>
             <Grid className={classes.title}>
               <Link to="/" underline="none" component={RouterLink} variant="h6" className={classes.title}>
-                <img src={logo} height="70px" width="80px" />
+                BYTEMONK
               </Link>
             </Grid>
             <Box flex={1} />
-            <div className={classes.sectionDesktop} style={{ display: "flex", justifyContent: "space-between" }}>
-              <Button size="small" buttonStyle="btn--primary" variant="text" color="inherit" component={NavLink} exact strict to="/">
+            <div className={classes.sectionDesktop}>
+              <Button size="small" variant="text" color="inherit" component={NavLink} exact strict to="/">
                 Home
               </Button>
-              <Button size="small" buttonStyle="btn--primary" variant="text" color="inherit" component={NavLink} exact strict to="/event">
+              <Button size="small" variant="text" color="inherit" component={NavLink} exact strict to="/event">
                 Events
               </Button>
-              <Button size="small" buttonStyle="btn--primary" variant="text" color="inherit" component={NavLink} to="/showcase" exact strict>
+              <Button size="small" variant="text" color="inherit" component={NavLink} to="/showcase" exact strict>
                 Projects
               </Button>
-              <Button size="small" buttonStyle="btn--primary" variant="text" color="inherit" component={NavLink} exact strict to="/FAQ">
+              <Button size="small" variant="text" color="inherit" component={NavLink} exact strict to="/FAQ">
                 FAQ
               </Button>
               {!props.auth ? (
-                <Button size="small" buttonStyle="btn--outline" component={NavLink} exact strict to="/auth">
+                <Button size="small" variant="outlined" color="secondary" component={NavLink} exact strict to="/auth">
                   Login
                 </Button>
               ) : (

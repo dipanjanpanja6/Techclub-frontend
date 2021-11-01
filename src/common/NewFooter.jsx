@@ -48,10 +48,6 @@ function Footer() {
       </div>
       <section className="social-media">
         <div className="social-media-wrap">
-<<<<<<< HEAD
-          <div className="footer-logo"></div>
-          <small className="website-rights">Bytemonk-GCECT Tech Club © 2021</small>
-=======
           <div className="footer-logo">
             <Link color="inherit" component={RouterLink} to="/" className="social-logo">
               <Fingerprint className="navbar-icon" />
@@ -63,7 +59,6 @@ function Footer() {
             <Link color="inherit" href="https://www.linkedin.com/in/dipanjanpanja6/" target="_blank">Dipanjan Panja (CSE-21) </Link>
              & <Link color="inherit" target="_blank" href="https://www.linkedin.com/in/00-ayush-jha/">Ayush Jha (CSE-23)</Link>
           </small>
->>>>>>> 382df4b76cd1519b0297c4fcb08a3974f039dda2
           <div className="social-icons">
             <Link color="inherit" href="#" target="_blank" aria-label="Facebook">
               <Facebook />
