@@ -46,7 +46,7 @@ export default function MultiActionAreaCard(props) {
           <img src={require("../../assets/icon/185958-social-media-icons/png/email.png")} style={{ width: "40px", height: "40px" }} />
         </a>
         <a href={linkedin}>
-          <img src={require("../../assets/icon/185958-social-media-icons/svg/linkedin.svg")} style={{ width: "50px", height: "50px" }} />
+          <img src={require("..//Home/team-members/icons8-linkedin.png")} style={{ width: "50px", height: "50px" }} />
         </a>
       </CardActions>
     </Card>

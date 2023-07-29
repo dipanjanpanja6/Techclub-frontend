@@ -1,38 +1,38 @@
 [
   {
-    "name": "Ayush Jha",
-    "designation": "President, MLSA, Cyber-Security Lead",
-    "img": "./team-members/ayushjha.jpeg",
+    "name": "Alapan Das",
+    "designation": "President, Ex-GDSC Lead, Intern at Quouch",
+    "img": "./team-members/Alapan.jpg",
     "contact": {
       "email": "",
       "PhoneNumber": "",
-      "Linkedin": "https://www.linkedin.com/in/00-ayush-jha/"
+      "Linkedin": "https://www.linkedin.com/in/alapandas3"
     }
   },
   {
-    "name": "Jayeeta Sarkar",
-    "designation": "Event Manager",
-    "img": "./team-members/jayetasarkar.jpg",
+    "name": "Arghyadip Dhara",
+    "designation": "Treasurer",
+    "img": "./team-members/Arghyadip.jpg",
     "contact": {
       "email": "",
       "PhoneNumber": "",
-      "Linkedin": "https://www.linkedin.com/"
+      "Linkedin": "https://www.linkedin.com/in/arghyadip-dhara-68a3b51b7/"
     }
   },
   {
-    "name": "Akash Kumar Sen",
-    "designation": "Web Development Lead",
-    "img": "./team-members/akashkumarsen.jpg",
+    "name": "Yashwant Kumar",
+    "designation": "Events Lead",
+    "img": "./team-members/Yashwant.jpg",
     "contact": {
       "email": "",
       "PhoneNumber": "",
-      "Linkedin": "https://www.linkedin.com/in/akash-kumar-sen-220b651b0/"
+      "Linkedin": "https://www.linkedin.com/in/yashwant-kumar-091827235/"
     }
   },
   {
-    "name": "Sitam Sardar",
-    "designation": "Android App Development Lead",
-    "img": "./team-members/sitamsardar.jpeg",
+    "name": "Sweta Rajak",
+    "designation": "GDSC Lead",
+    "img": "./team-members/sweta.jpeg",
     "contact": {
       "email": "",
       "PhoneNumber": "",
@@ -40,9 +40,9 @@
     }
   },
   {
-    "name": "Souhardya Ganguly",
-    "designation": "ML/AI Lead",
-    "img": "./team-members/souhardyaganguly.jpeg",
+    "name": "Saikat Sundar Das",
+    "designation": "Web Lead",
+    "img": "./team-members/saikat.jpeg",
     "contact": {
       "email": "",
       "PhoneNumber": "",
@@ -50,9 +50,9 @@
     }
   },
   {
-    "name": "Debdoot Roy Chowdhury",
-    "designation": "CP Lead, CodeChef GCECT Chapter Lead",
-    "img": "./team-members/debdootroychowdhury.jpeg",
+    "name": "Aniruddha Mukherjee",
+    "designation": "CP Lead",
+    "img": "./team-members/Aniruddha.jpeg",
     "contact": {
       "email": "",
       "PhoneNumber": "",
@@ -60,9 +60,9 @@
     }
   },
   {
-    "name": "Shubhrima Jana",
-    "designation": "GDSC Lead",
-    "img": "./team-members/subhrimajana.jpeg",
+    "name": "SK Abul Aman",
+    "designation": "App Development Lead",
+    "img": "./team-members/abul.jpeg",
     "contact": {
       "email": "",
       "PhoneNumber": "",
@@ -70,9 +70,9 @@
     }
   },
   {
-    "name": "Aniruddha Sarkar",
+    "name": "Jayanta Mardi",
     "designation": "Design Lead",
-    "img": "./team-members/aniruddha.jpg",
+    "img": "./team-members/Jayanta.jpeg",
     "contact": {
       "email": "",
       "PhoneNumber": "",
