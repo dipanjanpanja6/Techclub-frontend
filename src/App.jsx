@@ -112,4 +112,4 @@ const ActionsToProps = {
   checkUser,
   logout,
 }
-export default connect(StateToProps, ActionsToProps)(App)
+export default connect(StateToProps, ActionsToProps)(App) 
