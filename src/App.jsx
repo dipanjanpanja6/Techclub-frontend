@@ -11,12 +11,8 @@ import FAQ from "./pages/Faq"
 import Auth from "./pages/Auth"
 import User from "./pages/User"
 import F404 from "./pages/404"
-import Home from "./pages/Home"
 import Main from "./pages/Main"
 import Event from "./pages/Event"
-import AppBAr from "./common/Appbar"
-import Footer from "./common/footer"
-
 import Contact from "./pages/ContactUs"
 import ShowCase from "./pages/ShowCase"
 import Feedback from "./pages/Feedback"
@@ -24,6 +20,15 @@ import ScrollToTop from "./common/ScrollToTop"
 import ProgressBar from "./common/ProgressBar"
 import ProjectDetailsPage from "./pages/ProjectDetails"
 
+//===New=====
+// import Navbar from "./common/Navbar"
+import FooterNew from "./common/NewFooter"
+import Home from "./pages/Home/index"
+//=====old====
+// import Home from "./pages/Home"
+import AppBar from "./common/Appbar"
+// import Footer from "./common/footer"
+//============
 function App(props) {
   const [auth, setAuth] = useState(false)
   const [load, setLoad] = useState(false)
@@ -61,7 +66,7 @@ function App(props) {
 
   const AppContainer = () => (
     <div>
-      <AppBAr auth={auth} out={out} />
+      <AppBar auth={auth} out={out} />
       <Switch>
         <Route exact path="/required" component={() => <FAQ auth={auth} />} />
         <Route exact path="/faq" component={() => <FAQ auth={auth} />} />
@@ -74,7 +79,7 @@ function App(props) {
         <Route exact path="/home" component={({ location }) => (load ? auth ? <Main auth={auth} /> : <Redirect to={{ pathname: "/auth", state: { from: location } }} /> : <ProgressBar />)} />
         <Route render={() => <Redirect to="/404" />} />
       </Switch>
-      <Footer />
+      <FooterNew />
     </div>
   )
 
@@ -107,4 +112,4 @@ const ActionsToProps = {
   checkUser,
   logout,
 }
-export default connect(StateToProps, ActionsToProps)(App)
+export default connect(StateToProps, ActionsToProps)(App) 

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Alapan Das",
+    "designation": "President, Ex-GDSC Lead, Intern at Quouch",
+    "img": "./team-members/Alapan.jpg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/in/alapandas3"
+    }
+  },
+  {
+    "name": "Arghyadip Dhara",
+    "designation": "Treasurer",
+    "img": "./team-members/Arghyadip.jpg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/in/arghyadip-dhara-68a3b51b7/"
+    }
+  },
+  {
+    "name": "Yashwant Kumar",
+    "designation": "Events Lead",
+    "img": "./team-members/Yashwant.jpg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/in/yashwant-kumar-091827235/"
+    }
+  },
+  {
+    "name": "Sweta Rajak",
+    "designation": "GDSC Lead",
+    "img": "./team-members/sweta.jpeg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/in/sitam-sardar-10219b1b3/"
+    }
+  },
+  {
+    "name": "Saikat Sundar Das",
+    "designation": "Web Lead",
+    "img": "./team-members/saikat.jpeg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/in/souhardya-ganguly-a2a5ba1a9/"
+    }
+  },
+  {
+    "name": "Aniruddha Mukherjee",
+    "designation": "CP Lead",
+    "img": "./team-members/Aniruddha.jpeg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/in/debdootrc/"
+    }
+  },
+  {
+    "name": "SK Abul Aman",
+    "designation": "App Development Lead",
+    "img": "./team-members/abul.jpeg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/in/shubhrima-jana/"
+    }
+  },
+  {
+    "name": "Jayanta Mardi",
+    "designation": "Design Lead",
+    "img": "./team-members/Jayanta.jpeg",
+    "contact": {
+      "email": "",
+      "PhoneNumber": "",
+      "Linkedin": "https://www.linkedin.com/in/aniruddha-sarkar-3733791b7/"
+    }
+  }
+]

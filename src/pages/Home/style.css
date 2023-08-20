@@ -1,0 +1,32 @@
+.bg-image {
+    background-image:linear-gradient(180deg, rgba(255,255,255,0) 33%, rgba(52,52,52,1) 100%), url(https://techclub.web.app/static/media/background-header.a5ce07d0.jpg);
+    height: 100vh;
+    /* position: relative; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.title-content > div > div > div {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#home-sub-title{
+    color: #f7fff7;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+#home-title{
+    color: #f7fff7;
+    text-transform: capitalize;
+    font-size: 3rem;
+    text-align: center;
+}

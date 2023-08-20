@@ -120,10 +120,10 @@ class Auth extends Component {
           uid: n.Auth.admin.login.uid,
         })
       let from = n.location.state ? n.location.state.from.pathname : "/"
-      console.log(from)
-      n.Auth.admin.login.isActivated && (window.location = from)
 
-      // n.Auth.admin.login.isActivated && ( n.history.replace(from))
+      // n.Auth.admin.login.isActivated && (window.location = from)
+
+      n.Auth.admin.login.isActivated && n.history.replace(from)
     } else if (n.Auth.admin.login.error === true) toast.error(n.Auth.admin.login.message)
 
     // n.Auth.admin && this.setState({ auth: n.Auth.admin.login.success })
@@ -397,7 +397,7 @@ class Auth extends Component {
                 )}
 
                 <Typography variant="body2" color="textSecondary" style={{ padding: "12px" }}>
-                  Or continued with
+                  Or continue with
                 </Typography>
 
                 <Fab onClick={this.facebook} size="medium" className={clsx(classes.buttonFab)} variant="round" color="primary">
